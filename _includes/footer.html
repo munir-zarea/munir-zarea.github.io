@@ -7,11 +7,35 @@
             <a href="/projects/">
                 <span>Projects</span>
             </a>
-            <a href={{site.resume-url}} target="_blank" rel="noopener noreferrer">
+            <a href="{{ site.resume-url }}" target="_blank" rel="noopener noreferrer">
                 <span>Resume</span>
             </a>
         </div>
+
+        <!-- SOCIAL ICONS START -->
+        <div class="social-icons">
+            {% if site.external-links.linkedin %}
+            <a href="https://www.linkedin.com/in/{{ site.external-links.linkedin }}" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            {% endif %}
+
+            {% if site.external-links.github %}
+            <a href="https://github.com/{{ site.external-links.github }}" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            {% endif %}
+
+            {% if site.external-links.wordpress %}
+            <a href="https://wordpress.com/{{ site.external-links.wordpress }}" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-wordpress"></i>
+            </a>
+            {% endif %}
+        </div>
+        <!-- SOCIAL ICONS END -->
+
     </div>
+
     <div class="license">
         <span>For any question or suggestion for the portfolio template or projects, reach out <a class="help" href="mailto:aram.lee12@gmail.com"> Here</a> </span>
         <p>FreeToEngineer portfolio template © 2025 by Aram Lee is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
