@@ -20,7 +20,12 @@
                                 <a href="https://github.com/{{ site.external-links[platform] }}/" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
-                            
+
+                            {% when 'wordpress' %}
+                                <a href="{{ site.external-links[platform] }}" target="_blank">
+                                    <i class="fa-brands fa-wordpress"></i>
+                                </a>
+
                             {% when 'stackoverflow' %}
                                 <a href="https://stackoverflow.com/users/{{ site.external-links[platform] }}/" target="_blank">
                                     <i class="fa-brands fa-stack-overflow"></i>
