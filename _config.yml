@@ -97,7 +97,7 @@ skills:
     - Trajectory Planning
     - Thrust Vectoring
     - Closed-Loop Control
-    - PID / Bang-Bang / Optinal Control
+    - PID / Bang-Bang / Optimal Control
     
   - category: Visualization / Plotting
     tools: 
