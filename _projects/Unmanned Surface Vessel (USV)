@@ -1,0 +1,9 @@
+---
+layout: post
+title: Unmanned Surface Vessel
+description: At UHM, my peers and I created a mobile terrestrial robot to mimic the movements of an Unmanned Surface Vessel (USV). In this project, I personally was tasked with the integration of ROS2 within the robotic system. 
+skills: 
+- skill 1
+- skill 2
+main-image: /project.webp 
+---
