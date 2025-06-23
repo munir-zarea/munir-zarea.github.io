@@ -15,7 +15,7 @@ title: Munir Zarea's Portfolio # This is what shows up in the tab of the browser
 name: Munir Zarea
 headline: Hello!
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  I graduated from Oregon State University in 2022 with a B.S. in Mechanical Engineering.
+  Welcome to my engineering portfolio! I graduated from Oregon State University in 2022 with a B.S. in Mechanical Engineering.
   While at OSU, I was involved in marine energy innovation clubs such as the Marine Renewable
   Energy Club (MREC) and participated in the Marine Energy Collegiate Competition (MECC). 
   I also worked on a senior design project analyzing shark hydrodynamics to improve satellite
@@ -41,6 +41,7 @@ resume-url: https://docs.google.com/document/d/1PGKb0bOlUOzG8BIjWlieNmzuY4irOLmH
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
   linkedin: munir-zarea-722585159    # https://www.linkedin.com/in/{your url slug} 
   github: munir-zarea    # https://github.com/{your url slug}
+  
   
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
