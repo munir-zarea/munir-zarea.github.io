@@ -6,7 +6,7 @@ description:  As part of a project at the University of Hawaii at Manoa, my team
 skills: 
 - skill 1
 - skill 2
-main-image: /project.webp 
+main-image: /USV Overall Picture.png 
 ---
 
 ## Motivation & Objectives
