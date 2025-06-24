@@ -9,12 +9,21 @@ skills:
 main-image: /USV Overall Picture.png 
 ---
 
-## Motivation & Objectives
+## Motivation, Objectives, and Design
+- Why simulate a USV on land?
+- Robot should move in a 2D plane with 3 independent Degrees of Freedom (DOF).
+- Untethered
 
-## Design Approach
+To replicate USV-like motion, caster wheels were chosen. This allowed for motion on a 2D plane with 3 DOF. For propulsion, ducted fans, used for remote controlled planes, were used along with an Electronic Speed Controller (ESC). 
 
 ## ROS2 Integration
 
+
+
+
+
+## Challenges and Future Directions
+- Attempted Kalman Filter
 
 
 
