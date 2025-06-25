@@ -17,12 +17,19 @@ Fabrication: Ultimaker S5 (ABS), HP MJF (PA12)
 Data Analysis: MATLAB, Excel
 
 ## Motivation
-- The Problem? Satellite tags are essential for tracking sharl movements, but they unintentionally affect a shark's behavior due to added hydrodynamic load.
+- The Problem? Satellite tags are essential for tracking shark movements, but they unintentionally affect a shark's behavior due to added hydrodynamic load.
 - Design Gap: Existing tag designs have limited validation of their effect on shark motion, making it difficult to optimize for minimal interference.
 - Our Mission: Develop a repeatable method to qualtify the hydrodynamic impact of telemetry tags using accurate modeling and physical testing.
   
 ## Project Workflow
 {% include image-gallery.html images="General Methodology Flowchart.png" height="400" %} 
+### Digital Modeling
+- Four shark species were selected:
+
+
+- Used photogrammetric 3D models from DigitalLife3D
+- Cleaned and repaired models for 3D printing
+- 
 
 ## Wind Tunnel Testing
 
