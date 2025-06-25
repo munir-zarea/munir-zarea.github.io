@@ -23,6 +23,7 @@ Data Analysis: MATLAB, Excel
   
 ## Project Workflow
 {% include image-gallery.html images="General Methodology Flowchart.jpg" height="400" %} 
+
 ### Digital Modeling
 - Four shark species were selected:
 
