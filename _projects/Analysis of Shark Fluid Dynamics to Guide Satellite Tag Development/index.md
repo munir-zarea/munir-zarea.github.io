@@ -22,7 +22,7 @@ Data Analysis: MATLAB, Excel
 - Our Mission: Develop a repeatable method to qualtify the hydrodynamic impact of telemetry tags using accurate modeling and physical testing.
   
 ## Project Workflow
-{% include image-gallery.html images="General Methodology Flowchart.png" height="400" %} 
+{% include image-gallery.html images="General Methodology Flowchart.jpg" height="400" %} 
 ### Digital Modeling
 - Four shark species were selected:
 
