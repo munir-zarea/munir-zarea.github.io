@@ -9,10 +9,6 @@ skills:
 main-image: /Hammerhead in Wind Tunnel.jpg 
 ---
 
-{% include image-gallery.html images="https://live.staticflickr.com/65535/52821641477_d397e56bc4_k.jpg, https://live.staticflickr.com/65535/52822650673_f074b20d90_k.jpg" height="400"%}
-<span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>  
-You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns.  
-
 ## Tools Used
 CFD Software: STAR-CCM+
 Modeling/Prep: Blender, SolidWorks, Fusion 360
@@ -29,8 +25,12 @@ Data Analysis: MATLAB, Excel
 {% include image-gallery.html images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg" height="400"%} 
 
 ### Digital Modeling
-- Four shark species were selected:
-
+#### Four shark species were selected:
+- Shortfin Mako
+- Caribbean Reef
+- Blacktip Reef
+- Great Hammerhead
+  
 
 - Used photogrammetric 3D models from DigitalLife3D
 - Cleaned and repaired models for 3D printing
