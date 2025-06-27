@@ -30,11 +30,11 @@ Data Analysis: MATLAB, Excel
 - Caribbean Reef
 - Blacktip Reef
 - Great Hammerhead
-  
 
-- Used photogrammetric 3D models from DigitalLife3D
-- Cleaned and repaired models for 3D printing
-- 
+
+- We used photogrammetric 3D models of each shark provided to us from DigitalLife3D. These models were both prepared for 3D printing and STAR-CCM+.
+
+{% include image-gallery.html images="/assets/images/profile-image/nemesis-3d-model-mesh.jpeg" height="400"%} 
 
 ## Wind Tunnel Testing
 
