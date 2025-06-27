@@ -34,7 +34,7 @@ Data Analysis: MATLAB, Excel
 
 - We used photogrammetric 3D models of each shark provided to us from DigitalLife3D. These models were both prepared for 3D printing and STAR-CCM+.
 
-{% include image-gallery.html images="/assets/images/profile-image/nemesis-3d-model-mesh.jpeg" height="400"%} 
+{% include image-gallery.html images="/assets/images/profile-image/nemesis-3d-model-mesh.jpg" height="400"%} 
 
 ## Wind Tunnel Testing
 
