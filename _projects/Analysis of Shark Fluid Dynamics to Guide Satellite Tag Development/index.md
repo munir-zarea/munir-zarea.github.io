@@ -4,17 +4,22 @@ title: Hydrodynamic Analysis of Sharks to Guide Satellite Tag Design
 description: This project, completed as part of my undergraduate capstone at Oregon State University, analyzed the hydrodynamic impact of satellite telemetry tags on sharks. Using CFD modeling and wind tunnel validation, our team developed a repeatable methodology to evaluate tag-induced drag and lift across different shark species.
 
 skills: 
-- skill 1
-- skill 2
+- CFD
+- CAD
+- 3D Printing
+- Experimental Design
+- Data Analysis
+- Technical Writing
+  
 main-image: /Hammerhead in Wind Tunnel.jpg 
 ---
 
 ## Tools Used
-CFD Software: STAR-CCM+
-Modeling/Prep: Blender, SolidWorks, Fusion 360
-Experimental Setup: Arduino Nano, Strain Guages
-Fabrication: Ultimaker S5 (ABS), HP MJF (PA12)
-Data Analysis: MATLAB, Excel
+- CFD Software: STAR-CCM+
+- Modeling/Prep: Blender, SolidWorks, Fusion 360
+- Experimental Setup: Arduino Nano, Strain Guages
+- Fabrication: Ultimaker S5 (ABS), HP MJF (PA12)
+- Data Analysis: MATLAB, Excel
 
 ## Motivation
 - The Problem? Satellite tags are essential for tracking shark movements, but they unintentionally affect a shark's behavior due to added hydrodynamic load.
