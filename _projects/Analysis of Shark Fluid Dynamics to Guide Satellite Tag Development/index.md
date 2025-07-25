@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hydrodynamic Analysis of Sharks to Guide Satellite Tag Design
-description: This project, completed as part of my undergraduate capstone at Oregon State University, analyzed the hydrodynamic impact of satellite telemetry tags on sharks. Using CFD modeling and wind tunnel validation, our team developed a repeatable methodology to evaluate tag-induced drag and lift across different shark species.
+description: In this project, completed as part of my undergraduate capstone at Oregon State University, I analyzed the hydrodynamic impact of satellite telemetry tags on sharks. Using CFD modeling and wind tunnel validation, the team and I developed a repeatable methodology to evaluate tag-induced drag and lift across different shark species.
 
 skills: 
 - CFD
@@ -21,11 +21,32 @@ main-image: /Hammerhead in Wind Tunnel.jpg
 - Fabrication: Ultimaker S5 (ABS), HP MJF (PA12)
 - Data Analysis: MATLAB, Excel
 
-## Motivation
-- The Problem? Satellite tags are essential for tracking shark movements, but they unintentionally affect a shark's behavior due to added hydrodynamic load.
-- Design Gap: Existing tag designs have limited validation of their effect on shark motion, making it difficult to optimize for minimal interference.
-- Our Mission: Develop a repeatable method to qualtify the hydrodynamic impact of telemetry tags using accurate modeling and physical testing.
-  
+## Project Goals
+- Understand the hydrodynamic impact of telemetry tags on sharks.
+- Use CFD and wind tunnel testing to estimate lift and drag forces.
+- Validate computational models using physical prototypes.
+- Provide a method for optimizing tag design.
+
+## Methodology
+### Computational Fluid Dynamics (CFD)
+- 3D shark models obtained via photogrammetry.
+- Simulated in STAR-CCM+ with SST k-ω turbulence model.
+- Tested at 3 angles of attack: -12 degrees, 0 degrees, and +12 degrees.
+- Lift and drag coefficients computed and visualized.
+
+### Wind Tunnel Testing
+- 3D-printed shark models (ABS and Nylon PA12).
+- Force balance system connected to Arduino for live data.
+- Matched Reynolds number with CFD for validation.
+- Conducted calibration and error analysis.
+
+## Key Findings 
+- Lift coefficients ranged: -0.02 to 0.37.
+- Drag coefficients ranged: 0.14 to 0.21.
+- CFD generally matched wind tunnel data within acceptable error (<10%).
+- Surface finish (ABS vs Nylon) had negligible impact.
+- Shortfin mako had lowest drag, hammerhead had higher lift.
+
 ## Project Workflow
 {% include image-gallery.html images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg" height="400"%} 
 
