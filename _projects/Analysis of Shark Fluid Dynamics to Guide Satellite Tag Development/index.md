@@ -34,6 +34,9 @@ main-image: /Hammerhead in Wind Tunnel.jpg
 - Tested at 3 angles of attack: -12 degrees, 0 degrees, and +12 degrees.
 - Lift and drag coefficients computed and visualized.
 
+{% include image-gallery.html images="/assets/images/profile-image/nemesis-3d-model-mesh.jpg" height="100"%} 
+{% include image-gallery.html images="/assets/images/profile-image/Blacktip Results.jpg" height="100"%} 
+
 ### Wind Tunnel Testing
 - 3D-printed shark models (ABS and Nylon PA12).
 - Force balance system connected to Arduino for live data.
