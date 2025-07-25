@@ -30,7 +30,7 @@ main-image: /Hammerhead in Wind Tunnel.jpg
 ## Methodology
 ### Computational Fluid Dynamics (CFD)
 - 3D shark models obtained via photogrammetry.
-- Simulated in STAR-CCM+ with SST k-ω turbulence model.
+- Simulated in STAR-CCM+ with SST k-&omega turbulence model.
 - Tested at 3 angles of attack: -12 degrees, 0 degrees, and +12 degrees.
 - Lift and drag coefficients computed and visualized.
 
