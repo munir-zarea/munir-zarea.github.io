@@ -672,3 +672,43 @@ a {
     color: var(--link-color);
     text-decoration: none;
 }
+
+/* Image Gallery Styling */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 1.5em 0;
+}
+
+.image-gallery-item {
+  flex: 1 1 calc(50% - 16px);
+  max-width: calc(50% - 16px);
+  box-sizing: border-box;
+}
+
+.image-gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  display: block;
+  max-height: var(--gallery-height, 300px);
+}
+
+/* Full width on smaller screens */
+@media (max-width: 768px) {
+  .image-gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Optional: Center caption under grid */
+.gallery-caption {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+  margin-top: 0.5em;
+}
