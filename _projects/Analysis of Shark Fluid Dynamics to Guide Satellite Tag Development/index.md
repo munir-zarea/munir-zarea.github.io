@@ -40,7 +40,7 @@ main-image: /assets/images/profile-image/Hammerhead in Wind Tunnel.jpg
 - Lift and drag coefficients computed and visualized.
 
 {% include image-gallery.html 
-  images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpg, /assets/images/profile-image/CFD Mesh Generation.jpg" 
+  images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg, /assets/images/profile-image/CFD Mesh Generation.jpg" 
   height="300" 
   caption="Left: General methodology flowchart combining CFD and wind tunnel validation. Right: CFD mesh of blacktip reef shark model." 
 %}
