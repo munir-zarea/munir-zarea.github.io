@@ -1,22 +1,59 @@
 {% assign image_paths = include.images | split: ", " %}
 {% assign gallery_height = include.height | default: "300" %}
+{% assign caption = include.caption | default: "" %}
 
-<div class="image-gallery" style="--gallery-height: {{ gallery_height }}px;">
+<style>
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 1em 0;
+    justify-content: center;
+  }
+
+  .image-gallery-item {
+    flex: 1 1 calc(50% - 16px); /* 2 images per row */
+    max-width: calc(50% - 16px);
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .image-gallery-item {
+      flex: 1 1 100%; /* 1 per row on mobile */
+      max-width: 100%;
+    }
+  }
+
+  .image-gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+    max-height: {{ gallery_height }}px;
+  }
+
+  .gallery-caption {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+</style>
+
+<div class="image-gallery">
   {% for image_path in image_paths %}
-      {% assign image_name = image_path | strip %}
-      {% if image_name contains 'https://' or image_name contains '/' %}
-          <img 
-              src="{{ image_name }}"
-              alt="Web image"
-              loading="lazy"
-          />
-      {% else %}
-          <img 
-              src="{{ image_name }}" 
-              alt="{{ image_name }}"
-              loading="lazy"
-              onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');"
-          />
-      {% endif %}
+    {% assign image_name = image_path | strip %}
+    <div class="image-gallery-item">
+      <img 
+        src="{{ image_name }}" 
+        alt="{{ image_name | split: '/' | last }}" 
+        loading="lazy"
+        onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');"
+      />
+    </div>
   {% endfor %}
 </div>
+
+{% if caption %}
+  <div class="gallery-caption">{{ caption }}</div>
+{% endif %}
