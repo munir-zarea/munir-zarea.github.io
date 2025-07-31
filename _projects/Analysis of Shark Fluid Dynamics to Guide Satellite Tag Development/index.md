@@ -34,6 +34,7 @@ main-image: /Hammerhead in Wind Tunnel.jpg
 - Tested at 3 angles of attack: -12 degrees, 0 degrees, and +12 degrees.
 - Lift and drag coefficients computed and visualized.
 
+{% include image-gallery.html images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg" height="100"%}
 {% include image-gallery.html images="/assets/images/profile-image/nemesis-3d-model-mesh.jpg" height="100"%} 
 {% include image-gallery.html images="/assets/images/profile-image/Blacktip Results.jpg" height="100"%} 
 
@@ -42,6 +43,8 @@ main-image: /Hammerhead in Wind Tunnel.jpg
 - Force balance system connected to Arduino for live data.
 - Matched Reynolds number with CFD for validation.
 - Conducted calibration and error analysis.
+{% include image-gallery.html images="/assets/images/profile-image/Calibration Method.jpg" height="100"%}
+{% include image-gallery.html images="/assets/images/profile-image/Aluminum Sleeve.jpg" height="100"%} 
 
 ## Key Findings 
 - Lift coefficients ranged: -0.02 to 0.37.
