@@ -59,11 +59,13 @@ main-image: /assets/images/profile-image/Hammerhead in Wind Tunnel.jpg
   caption="Left: Calibration method using suspended weights. Right: Machined aluminum sleeve used for secure mounting in the wind tunnel." 
 %}
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Hammerhead in Wind Tunnel.jpg" 
-  height="300" 
-  caption="3D printed hammerhead shark mounted in wind tunnel at 0° angle of attack." 
-%}
+<div style="text-align: center;">
+  {% include image-gallery.html 
+    images="/assets/images/profile-image/Hammerhead in Wind Tunnel.jpg" 
+    height="300" 
+    caption="3D printed hammerhead shark mounted in wind tunnel at 0° angle of attack." 
+  %}
+</div>
 
 ---
 
