@@ -712,3 +712,7 @@ a {
   text-align: center;
   margin-top: 0.5em;
 }
+
+.centered-gallery {
+    text-align: center;
+}
