@@ -58,10 +58,10 @@
 
 <div class="image-gallery {% if count == 1 %}single{% else %}two-up{% endif %}">
   {% for image_path in image_paths %}
-    {% assign image_name = image_path | strip %}
+    {% assign image_name = include.images | split: "," %}
     <div class="image-gallery-item">
       <img 
-        src="{{ image_name | uri_escape }}"  <!-- handles spaces -->
+        src="{{ image_name | strip | uri_escape | relative_url}}"
         alt="{{ image_name | split: '/' | last }}" 
         loading="lazy"
       />
