@@ -11,7 +11,7 @@ skills:
 - Data Analysis
 - Technical Writing
 
-main-image: /assets/images/profile-image/Hammerhead in Wind Tunnel.jpg
+main-image: /assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg
 ---
 
 ## Tools Used
@@ -46,7 +46,7 @@ main-image: /assets/images/profile-image/Hammerhead in Wind Tunnel.jpg
 %}
 
 <img
-  src="/assets/images/profile-image/Hammerhead%20in%20Wind%20Tunnel.jpg"
+  src="/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg"
   alt="hammerhead"
   style="all: initial; display:block; max-width:100%; height:auto; margin:1rem auto; outline:2px dashed red;"
 >
