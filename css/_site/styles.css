@@ -716,3 +716,8 @@ a {
 .centered-gallery {
     text-align: center;
 }
+
+figure {
+    margin: auto;
+    text-align: center;
+}
