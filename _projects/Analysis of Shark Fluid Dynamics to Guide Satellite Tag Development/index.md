@@ -77,11 +77,13 @@ main-image: /assets/images/profile-image/Hammerhead in Wind Tunnel.jpg
   caption="Left: Drag coefficient vs angle of attack for each species. Right: Drag coefficient vs frontal area for each shark." 
 %}
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Reynolds Number vs Drag Coefficient.jpg" 
-  height="300" 
-  caption="Validation of wind tunnel accuracy with CFD comparison for a standard sphere at various Reynolds numbers." 
-%}
+<div style="text-align: center;">
+  {% include image-gallery.html 
+    images="/assets/images/profile-image/Reynolds Number vs Drag Coefficient.jpg" 
+    height="300" 
+    caption="Validation of wind tunnel accuracy with CFD comparison for a standard sphere at various Reynolds numbers." 
+  %}
+</div>
 
 ---
 
