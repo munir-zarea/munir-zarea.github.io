@@ -54,7 +54,7 @@ main-image: /assets/images/profile-image/Hammerhead in Wind Tunnel.jpg
 - Calibration and mounting setup shown below:
 
 {% include image-gallery.html 
-  images="/assets/images/profile-image/Calibration Method.jpg, /assets/images/profile-image/Aluminum Sleeve.jpg" 
+  images="/assets/images/profile-image/Calibration Method.jpg, /assets/images/profile-image/Aluminum%Sleeve.jpg" 
   height="300" 
   caption="Left: Calibration method using suspended weights. Right: Machined aluminum sleeve used for secure mounting in the wind tunnel." 
 %}
