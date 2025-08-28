@@ -60,7 +60,7 @@ main-image: /assets/images/profile-image/Hammerhead in Wind Tunnel.jpg
 %}
 
 {% include image-gallery.html 
-  images="/assets/images/profile-image/Hammerhead in Wind Tunnel.jpg, /assets/images/profile-image/nemesis-3d-model-mesh.jpg" 
+  images="/assets/images/profile-image/Hammerhead in Wind Tunnel.jpg, /assets/images/profile-image/Blacktip in Wind Tunnel.jpg" 
   height="300" 
   caption="Left: 3D printed hammerhead shark mounted in wind tunnel at 0° angle of attack. Right: 3D models from 'DigitalLife3D'." 
 %}
