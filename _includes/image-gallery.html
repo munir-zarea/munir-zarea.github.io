@@ -1,35 +1,51 @@
 {% assign image_paths = include.images | split: ", " %}
 {% assign gallery_height = include.height | default: "300" %}
 {% assign caption = include.caption | default: "" %}
+{% assign count = image_paths | size %}
 
 <style>
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin: 1em 0;
-    justify-content: center;
+    margin: 1em auto;          /* center the whole block */
+    justify-content: center;    /* center items inside */
   }
 
-  .image-gallery-item {
-    flex: 1 1 calc(50% - 16px); /* 2 images per row */
+  /* default: 2 per row */
+  .image-gallery.two-up .image-gallery-item {
+    flex: 1 1 calc(50% - 16px);
     max-width: calc(50% - 16px);
     box-sizing: border-box;
   }
 
   @media (max-width: 768px) {
-    .image-gallery-item {
-      flex: 1 1 100%; /* 1 per row on mobile */
+    .image-gallery.two-up .image-gallery-item {
+      flex: 1 1 100%;
       max-width: 100%;
     }
   }
 
+  /* single image: let the item shrink to the image, then center it */
+  .image-gallery.single .image-gallery-item {
+    flex: 0 0 auto;             /* size to content */
+    max-width: none;
+  }
+
   .image-gallery-item img {
+    display: block;
     width: 100%;
     height: auto;
     border-radius: 8px;
     object-fit: contain;
     max-height: {{ gallery_height }}px;
+  }
+
+  /* single image: don't stretch to container width */
+  .image-gallery.single .image-gallery-item img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;             /* center the image itself */
   }
 
   .gallery-caption {
@@ -40,15 +56,14 @@
   }
 </style>
 
-<div class="image-gallery">
+<div class="image-gallery {% if count == 1 %}single{% else %}two-up{% endif %}">
   {% for image_path in image_paths %}
     {% assign image_name = image_path | strip %}
     <div class="image-gallery-item">
       <img 
-        src="{{ image_name }}" 
+        src="{{ image_name | uri_escape }}"  <!-- handles spaces -->
         alt="{{ image_name | split: '/' | last }}" 
         loading="lazy"
-        onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');"
       />
     </div>
   {% endfor %}
