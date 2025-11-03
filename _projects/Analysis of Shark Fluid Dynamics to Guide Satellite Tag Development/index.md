@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hydrodynamic Analysis of Sharks to Guide Satellite Tag Design
-description: In this project, completed as part of my undergraduate capstone at Oregon State University, I analyzed the hydrodynamic impact of satellite telemetry tags on sharks. Using CFD modeling and wind tunnel validation, the team and I developed a repeatable methodology to evaluate tag-induced drag and lift across different shark species.
+description: In this project, completed as part of my undergraduate capstone assignment at Oregon State University, I analyzed the hydrodynamic impact of satellite telemetry tags on sharks. Using CFD modeling and wind tunnel validation, the team and I developed a repeatable methodology to evaluate tag-induced drag and lift across different shark species.
 
 skills: 
 - CFD
