@@ -45,11 +45,11 @@ main-image: /assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg
   caption="Left: General methodology flowchart combining CFD and wind tunnel validation. Right: CFD mesh of blacktip reef shark model." 
 %}
 
-<img
-  src="/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg"
-  alt="hammerhead"
-  style="all: initial; display:block; max-width:100%; height:auto; margin:1rem auto; outline:2px dashed red;"
->
+{% include image-gallery.html 
+  images="/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg" 
+  height="300" 
+  caption="3D printed hammerhead model positioned in wind tunnel for testing." 
+%}
 
 
 ---
