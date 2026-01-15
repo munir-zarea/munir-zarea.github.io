@@ -630,11 +630,11 @@ footer p {
     padding: 0 50px;
     border-radius: 10px;
 }
- 
+
 .post-view .content .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
     width: 100%;
