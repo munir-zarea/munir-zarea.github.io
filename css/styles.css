@@ -642,6 +642,16 @@ footer p {
     gap: 10px;
 }
 
+/* Captions */
+.gallery-caption {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5em;
+  color: var(--text-color);   /* <-- this matches your theme */
+  font-size: 0.95em;
+}
+
+
 /* Key fix: prevent gallery children (figure/a/div) from stretching full width */
 .post-view .content .image-gallery > * {
     flex: 0 0 auto;
