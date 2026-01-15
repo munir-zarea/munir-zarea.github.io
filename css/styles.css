@@ -631,22 +631,41 @@ footer p {
     border-radius: 10px;
 }
 
+/* ===== Centered Image Gallery (UPDATED) ===== */
 .post-view .content .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;     /* center the row */
     align-items: flex-start;
     align-content: flex-start;
     width: 100%;
-    gap: 10px
+    gap: 10px;
 }
 
+/* Key fix: prevent gallery children (figure/a/div) from stretching full width */
+.post-view .content .image-gallery > * {
+    flex: 0 0 auto;
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* Extra safety for common wrappers */
+.post-view .content .image-gallery a,
+.post-view .content .image-gallery figure,
+.post-view .content .image-gallery div {
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* Ensure image itself doesn't behave like inline content */
 .post-view .content .image-gallery img {
-    max-height: var(--gallery-height); 
-    width: auto; 
+    max-height: var(--gallery-height);
+    width: auto;
     max-width: 100%;
     object-fit: contain;
     align-self: flex-start;
+    display: block;
+    margin: 0 auto;
 }
   
 .post-view .content  a {
@@ -946,4 +965,3 @@ footer p {
 
       
 }
-
