@@ -61,6 +61,13 @@
         src="{{ image_name }}" 
         alt="{{ image_name | split: '/' | last }}" 
         loading="lazy"
+        style="
+          {% if sizes[forloop.index0] %}
+          max-height: {{ sizes[forloop.index0] }}px;
+          {% else %}
+          max-height: {{ gallery_height }}px;
+          {% endif %}
+        "
         onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');"
       />
     </div>
