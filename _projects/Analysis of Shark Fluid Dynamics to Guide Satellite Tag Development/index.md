@@ -47,7 +47,7 @@ main-image: /assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg
 
 {% include image-gallery.html 
   images="/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg" 
-  height="300" 
+  height="100" 
   caption="3D printed hammerhead model positioned in wind tunnel for testing." 
 %}
 
