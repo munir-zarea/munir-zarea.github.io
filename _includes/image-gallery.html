@@ -74,6 +74,6 @@
   {% endfor %}
 </div>
 
-{% if caption %}
-  <div class="gallery-caption">{{ caption }}</div>
+{% if include.caption and include.caption !="" %}
+  <div class="gallery-caption">{{ include.caption }}</div>
 {% endif %}
