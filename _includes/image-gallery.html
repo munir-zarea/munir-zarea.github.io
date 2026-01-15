@@ -1,6 +1,6 @@
 {% assign image_paths = include.images | split: ", " %}
 {% assign gallery_height = include.height | default: "300" %}
-{% assign caption = include.caption | default: "" %}
+{% assign sizes = include.sizes | split: "" %}
 
 <style>
   .image-gallery {
