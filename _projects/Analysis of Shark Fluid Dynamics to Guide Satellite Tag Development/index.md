@@ -104,10 +104,10 @@ main-image: /assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg
 ## Digital Modeling
 
 ### Shark Species Modeled
-- Shortfin Mako (*Isurus oxyrinchus*)
-- Caribbean Reef (*Carcharhinus perezii*)
-- Blacktip Reef (*Carcharhinus limbatus*)
-- Great Hammerhead (*Sphyrna mokarran*)
+- Shortfin Mako
+- Caribbean Reef
+- Blacktip Reef
+- Great Hammerhead
 
 Photogrammetric 3D models were sourced from **DigitalLife3D**, processed for STAR-CCM+ simulation and 3D printing.
 
