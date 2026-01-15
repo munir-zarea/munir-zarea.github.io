@@ -41,7 +41,7 @@ main-image: /assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg
 
 {% include image-gallery.html 
   images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg, /assets/images/profile-image/CFD_Mesh_Generation.jpg" 
-  sizes="200" 
+  height="200" 
   caption="Left: General methodology flowchart combining CFD and wind tunnel validation. Right: CFD mesh of blacktip reef shark model." 
 %}
 
