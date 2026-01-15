@@ -694,7 +694,7 @@ footer p {
 
 .post-view .content th {
     padding: 8px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #e9ecef;
     background-color: #f8f9fa;
     color: #495057;
@@ -703,7 +703,7 @@ footer p {
 
 .post-view .content td {
     padding: 8px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #e9ecef;
     color: var(--text-color);
     font-size: calc(10px + 0.5vw); /* Matches p size */
