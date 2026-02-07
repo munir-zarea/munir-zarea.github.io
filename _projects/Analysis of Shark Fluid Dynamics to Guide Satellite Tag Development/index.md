@@ -8,7 +8,7 @@ description: In this project, completed as part of my undergraduate capstone ass
   Analysis of Shark Fluid Dynamics to Guide Satellite Telemetry Tag Development (PDF) 
 </a>
 
-skills: 
+## Skills Used
 - CFD
 - CAD
 - 3D Printing
