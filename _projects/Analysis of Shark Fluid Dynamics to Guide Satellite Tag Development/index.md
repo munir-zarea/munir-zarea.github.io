@@ -4,7 +4,7 @@ title: Hydrodynamic Analysis of Sharks to Guide Satellite Tag Design
 description: In this project, completed as part of my undergraduate capstone assignment at Oregon State University, I analyzed the hydrodynamic impact of satellite telemetry tags on sharks. Using CFD modeling and wind tunnel validation, the team and I developed a repeatable methodology to evaluate tag-induced drag and lift across different shark species. The work was published in the 2022 ASME International Mechanical Engineering Congress and Exposition. View the full article here - 
 
 paper:
-  title: Analysis of Shark Fluid Dynamics to Guide Satellite Telemetry Tag Development (PDF)
+  title: Analysis of Shark Fluid Dynamics to Guide Satellite Telemetry Tag Development
   url: /assets/pdfs/Shark_Tag_Capstone_Group606_FINAL_REPORT.pdf
 
 
