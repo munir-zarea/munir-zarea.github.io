@@ -5,15 +5,7 @@
         <img src="{{ item['main-image'] | relative_url }}" alt="{{ item.title }} image">
       {% endif %}
       <h3 class="project-title">{{ item.title }}</h3>
-
-      <div class="project-skills">
-        {% for skill in item.skills %}
-          <span class="skill">{{ skill }}</span>
-        {% endfor %}
-      </div>
-
-      <p class="project-description">{{ item.description }}</p>
-      <button class="read-more">Read more →</button>
+      ...
     </div>
   </a>
 {% endfor %}
