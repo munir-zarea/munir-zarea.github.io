@@ -18,6 +18,7 @@ skills:
 
 
 main-image: "/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg"
+---
 
 ## Tools Used
 - **CFD Software:** STAR-CCM+
@@ -26,7 +27,6 @@ main-image: "/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg"
 - **Fabrication:** Ultimaker S5 (ABS), HP MJF (PA12)
 - **Data Analysis:** MATLAB, Excel
 
----
 
 ## Project Goals
 - Understand the hydrodynamic impact of telemetry tags on sharks.
