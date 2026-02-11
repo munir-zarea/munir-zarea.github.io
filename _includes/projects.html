@@ -1,11 +1,40 @@
-{% for item in site.projects %}
-  <a href="{{ item.url | relative_url }}" class="project-link">
-    <div class="project-card">
-      {% if item['main-image'] %}
-        <img src="{{ item['main-image'] | relative_url }}" alt="{{ item.title }} image">
-      {% endif %}
-      <h3 class="project-title">{{ item.title }}</h3>
-      ...
-    </div>
-  </a>
-{% endfor %}
+<!-- SECTION: Projects -->
+<section id="projects" class="project-grid-section">
+  <h2>Projects</h2>
+
+  <div class="grid-container">
+    {% for item in site.projects %}
+      <a href="{{ item.url | relative_url }}" class="project-link">
+        <div class="project-card">
+
+          {% if item['main-image'] %}
+            <img
+              src="{{ item['main-image'] | relative_url }}"
+              alt="{{ item.title }} image"
+              class="project-image"
+            >
+          {% endif %}
+
+          <h3 class="project-title">{{ item.title }}</h3>
+
+          {% if item.skills %}
+            <div class="project-skills">
+              {% for skill in item.skills %}
+                <span class="skill">{{ skill }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if item.description %}
+            <p class="project-description">
+              {{ item.description }}
+            </p>
+          {% endif %}
+
+          <button class="read-more">Read more →</button>
+
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
