@@ -17,7 +17,7 @@ skills:
 - Technical Writing
 
 
-main-image: "/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg"
+main-image: /Hammerhead_in_Wind_Tunnel_main.jpg
 ---
 
 ## Tools Used
