@@ -19,8 +19,6 @@ skills:
 
 main-image: /Hammerhead_in_Wind_Tunnel.jpg
 
----
-
 ## Tools Used
 - **CFD Software:** STAR-CCM+
 - **Modeling/Prep:** Blender, SolidWorks, Fusion 360
