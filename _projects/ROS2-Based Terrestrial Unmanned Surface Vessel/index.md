@@ -6,7 +6,7 @@ description:  As part of a project at the University of Hawaii at Manoa, my team
 skills: 
 - ROS 2
 - Gazebo
-main-image: /assets/images/profile-image/USV Overall Picture.png 
+main-image: /assets/images/profile-image/USV_Overall_Picture.png 
 ---
 
 ## Motivation, Objectives, and Design
