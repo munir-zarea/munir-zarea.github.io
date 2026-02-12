@@ -19,13 +19,7 @@ main-image: /assets/images/profile-image/USV_Overall_Picture.png
 - Modular, 3D printed chassis
 
 ## Design & Build
-We started by designing a compact, modular platform that could house all electronics and withstand repeated use in a classroom.
-
-{% include image-gallery.html 
-  images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg, /assets/images/profile-image/CFD_Mesh_Generation.jpg" 
-  height="200" 
-  caption="Left: General methodology flowchart combining CFD and wind tunnel validation. Right: CFD mesh of blacktip reef shark model." 
-%}
+We started by designing a compact, modular platform that could house all electronics and withstand repeated use in a classroom. The vehicle uses two ducted fans mounted side-by-side, creating forward and lateral motion through differential thrust. Four caster wheels support the platform while minimizing ground friction.
 
 Our goals:
 - Simple mechanical design (3D printed parts)
@@ -33,9 +27,9 @@ Our goals:
 - Untethered operation using LiPo batteries
 
 {% include image-gallery.html 
-  images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg, /assets/images/profile-image/CFD_Mesh_Generation.jpg" 
+  images="/assets/images/profile-image/CAD_model.jpg" 
   height="200" 
-  caption="The vehicle uses two ducted fans mounted side-by-side, creating forward and lateral motion through differential thrust. Four caster wheels support the platform while minimizing ground friction." 
+  caption="" 
 %}
 
 ## Motivation, Objectives, and Design
