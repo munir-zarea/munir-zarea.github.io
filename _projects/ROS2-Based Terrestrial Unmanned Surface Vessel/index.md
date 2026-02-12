@@ -32,7 +32,7 @@ Our goals:
   caption="Proposed overall CAD model of USV" 
 %}
 
-## Electronics & Communication
+## Electronics, Communication, and ROS2 Integration
 The electrical stack includes:
 - An Arduino Uno for real-time control of motor ESCs and IMU acquisition
 - An MPU-6050 IMU for roll/pitch/yaw and acceleration measurements
@@ -43,6 +43,14 @@ The electrical stack includes:
   height="400" 
   caption="High-level system architecture highlighting the interaction between the human operator, control electronics, and robot hardware, with color-coded links denoting power, signals, data transmission, and user input." 
 %}
+
+Key ROS2 components:
+- Joystick node for user teleoperation
+- Serial bridge node to read IMU data and send motor commands
+- Launch files to bring all nodes up in coordinated stacks
+
+## State Estimation & Filters
+Our IMU data contained significant noise. To address this, we added one more IMU and included a Kalman filter with our model to 
 
 ## Motivation, Objectives, and Design
 
