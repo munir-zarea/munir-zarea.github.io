@@ -28,8 +28,8 @@ Our goals:
 
 {% include image-gallery.html 
   images="/assets/images/profile-image/CAD_model.jpg" 
-  height="200" 
-  caption="" 
+  height="400" 
+  caption="Proposed overall CAD model of USV" 
 %}
 
 ## Motivation, Objectives, and Design
