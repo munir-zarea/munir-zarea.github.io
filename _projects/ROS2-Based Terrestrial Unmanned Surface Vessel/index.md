@@ -32,6 +32,18 @@ Our goals:
   caption="Proposed overall CAD model of USV" 
 %}
 
+## Electronics & Communication
+The electrical stack includes:
+- An Arduino Uno for real-time control of motor ESCs and IMU acquisition
+- An MPU-6050 IMU for roll/pitch/yaw and acceleration measurements
+- Bluetooth communication for wireless joystick control
+
+{% include image-gallery.html 
+  images="/assets/images/profile-image/USV_Block_Diagram.jpg" 
+  height="400" 
+  caption="High-level system architecture highlighting the interaction between the human operator, control electronics, and robot hardware, with color-coded links denoting power, signals, data transmission, and user input." 
+%}
+
 ## Motivation, Objectives, and Design
 
 To replicate USV-like motion, caster wheels were chosen. This allowed for motion on a 2D plane with 3 DOF. For propulsion, ducted fans, used for remote controlled planes, were used along with an Electronic Speed Controller (ESC). 
