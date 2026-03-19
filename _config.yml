@@ -15,8 +15,11 @@ title: Munir Zarea's Portfolio # This is what shows up in the tab of the browser
 name: Munir Zarea
 headline: Hello!
 description: >- # dont remove this line. this will ignore all new lines until the next section
-  I am a mechanical engineer specializing in subsea robotics, underwater instrumentation, and hands-on system development. My work focuses on designing, building, and deploying robotic systems for real-world ocean environments, including bio-inspired soft robots, pressure-tolerant imaging systems, and sensor-integrated platforms. Through my research at the University of Hawaii at Manoa, I have led the development of underwater robotic systems from concept to ocean deployment—combining CAD-driven design, ROS2-based control, and experimental validation. My projects emphasize rapid prototyping, field testing, and multidisciplinary integration of mechanical, electrical, and software systems. I am particularly interested in developing robust, deployable technologies for marine research, autonomy, and subsea exploration.
+  I am a Mechanical Engineering Master’s student at the University of Hawaiʻi at Mānoa, graduating Spring 2026, with a focus on subsea robotics and underwater system development.
 
+I design and build robotic systems for ocean environments, including bio-inspired manipulators, pressure-tolerant camera enclosures, and sensor-integrated platforms. My experience spans full-cycle development—from CAD and prototyping to integration, testing, and real-world deployment on underwater vehicles.
+
+I am particularly interested in hands-on engineering roles involving marine robotics, autonomous systems, and subsea instrumentation.
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/Profile_Picture_Munir.jpeg
 
