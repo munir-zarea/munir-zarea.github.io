@@ -17,9 +17,9 @@ headline: Hello!
 description: >- # dont remove this line. this will ignore all new lines until the next section
   I am a Mechanical Engineering Master’s student at the University of Hawaiʻi at Mānoa, graduating Spring 2026, with a focus on subsea robotics and underwater system development.
 
-I design and build robotic systems for ocean environments, including bio-inspired manipulators, pressure-tolerant camera enclosures, and sensor-integrated platforms. My experience spans full-cycle development—from CAD and prototyping to integration, testing, and real-world deployment on underwater vehicles.
+I design and build bio-inspired manipulators, pressure-tolerant camera enclosures, and sensor-integrated platforms. 
 
-I am particularly interested in hands-on engineering roles involving marine robotics, autonomous systems, and subsea instrumentation.
+I am particularly interested in hands-on engineering involving marine robotics, autonomous systems, and subsea instrumentation.
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/Profile_Picture_Munir.jpeg
 
