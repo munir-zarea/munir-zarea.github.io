@@ -38,64 +38,48 @@ external-links:    # input only your own url slug. The icons with missing entrie
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
-  - category: CAD
+  - category: Mechanical Design & CAD
     tools:
-    - Onshape
-    - Solidworks
-    - AutoDesk Fusion 360
-    - Creo / Creo Flow
+    - SolidWorks
+    - Creo
     - Siemens NX
+    - Onshape
+    - Mechanical drawings
+    - GD&T
+    - Design Documentation
     
-  - category: Computational Programs
+  - category: Maritime & Subsea Systems
     tools: 
-    - MATLAB
-    - Simulink
-    - Python
-    - C++
-    - ROS2
-    - Linux (Ubuntu)
-    - AFT Arrow
-    - STAR-CCM+
+    - Underwater enclosures
+    - Buoyancy and propulsion mechanisms
+    - Subsea sensors
     
-  - category: Robotics / Embedded
+  - category: Controls & Robotics
     tools:
-    - Arduino
-    - Raspberry Pi
-    - IMU Integration & Filtering (e.g., Kalman, Madgwick)
-    - Serial Communication (UART, I2C, SPI)
-    - Joystick Input Mapping
-    - Servo & Motor Control
-    - PWM & GPIO Interfacing
+    - ROS2 node development
+    - Robotic actuation (servo, pneumatic systems)
+    - Sensor fusion (IMU, stereo vision)
+    - Feedback control systems
     
-  - category: Fabrication
+  - category: Prototyping & Testing
     tools:
-    - 3D Printing (FDM)
-    - Resin Printing (SLA)
-    - Laser Cutting
-    - Soldering
-    - Curcuit Prototyping
-    - Basic Welding 
+    - Rapid prototype development & iteration
+    - Hardware validation and bench testing
+    - Ocean deployment testing
+    - Waterproofing & pressure testing
     
-  - category: Controls / Navigation
+  - category: Programming & Tools
     tools:
-    - Kalman Filtering (EKF)
-    - Trajectory Planning
-    - Thrust Vectoring
-    - Closed-Loop Control
-    - PID / Bang-Bang / Optimal Control
+    - Python (data analysis, robotics)
+    - C++ (ROS2 nodes)
+    - MATLAB (modeling & simulation)
+    - Data acquisition & analysis
     
-  - category: Visualization / Plotting
+  - category: System Engineering/Integration
     tools: 
-    - RViz
-    - rqt_plot / rqt_multiplot
-    - Multiplot / Seaborn
-    - Paraview (if used with CFD)
-    
-  - category: Communication / Collaboration
-    tools:
-    - Git / GitHub
-    - LaTeX / Overleaf
-    - VS Code
+    - System integration (mechanical, electrical, software)
+    - Hardware-in-the-loop (HWIL) testing
+    - Requirements-driven design
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
