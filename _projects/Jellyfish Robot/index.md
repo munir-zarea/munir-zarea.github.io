@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Stiffness- and Buoyancy-Tunable Underwater Manipulator
-description: In this project, completed as part of my graduate research at the University of Hawaiʻi at Mānoa, I designed and built a bio-inspired underwater robotic manipulator that combines stiffness tuning, buoyancy-driven orientation control, and a detachable end effector for manipulation in fragile, confined, and hard-to-reach environments. Inspired by jellyfish and octopus-like locomotion and manipulation strategies, the system was developed as a soft robotic platform for underwater grasping tasks that conventional rigid manipulators struggle to perform. The work includes mechanical design, soft actuator fabrication, prototyping, experimental validation, and robotic control development, and was prepared for submission to IROS 2026.
+description: 
+  In this project, completed as part of my graduate research at the University of Hawaiʻi at Mānoa, I designed and built a bio-inspired underwater robotic manipulator that combines stiffness tuning, buoyancy-driven orientation control, and a detachable end effector for manipulation in fragile, confined, and hard-to-reach environments. Inspired by jellyfish and octopus-like locomotion and manipulation strategies, the system was developed as a soft robotic platform for underwater grasping tasks that conventional rigid manipulators struggle to perform. The work includes mechanical design, soft actuator fabrication, prototyping, experimental validation, and robotic control development, and was prepared for submission to IROS 2026.
 
 paper:
   title: Stiffness- and Buoyancy-Tunable Underwater Object Manipulation with a Detachable End Effector
