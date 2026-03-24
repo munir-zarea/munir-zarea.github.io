@@ -1,146 +1,124 @@
 ---
 layout: post
-title: Hydrodynamic Analysis of Sharks to Guide Satellite Tag Design
-description: In this project, completed as part of my undergraduate capstone assignment at Oregon State University, I analyzed the hydrodynamic impact of satellite telemetry tags on sharks. Using CFD modeling and wind tunnel validation, the team and I developed a repeatable methodology to evaluate tag-induced drag and lift across different shark species. The work was published in the 2022 ASME International Mechanical Engineering Congress and Exposition. View the full article here - 
+title: Stiffness- and Buoyancy-Tunable Underwater Manipulator
+description: In this project, completed as part of my graduate research at the University of Hawaiʻi at Mānoa, I designed and built a bio-inspired underwater robotic manipulator that combines stiffness tuning, buoyancy-driven orientation control, and a detachable end effector for manipulation in fragile, confined, and hard-to-reach environments. Inspired by jellyfish and octopus-like locomotion and manipulation strategies, the system was developed as a soft robotic platform for underwater grasping tasks that conventional rigid manipulators struggle to perform. The work includes mechanical design, soft actuator fabrication, prototyping, experimental validation, and robotic control development, and was prepared for submission to IROS 2026.
 
 paper:
-  title: Analysis of Shark Fluid Dynamics to Guide Satellite Telemetry Tag Development
-  url: /assets/pdfs/Shark_Tag_Capstone_Group606_FINAL_REPORT.pdf
-
+  title: Stiffness- and Buoyancy-Tunable Underwater Object Manipulation with a Detachable End Effector
+  url: /assets/pdfs/IROS_2026_manuscript.pdf
 
 skills:
-- CFD
+- Soft Robotics
+- Mechanical Design
+- Prototyping
+- ROS 2
+- Pneumatic Actuation
+- Experimental Validation
 - CAD
 - 3D Printing
-- Experimental Design
-- Data Analysis
+- System Integration
 - Technical Writing
 
-
-main-image: /assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg
+main-image: /assets/images/profile-image/jellyfish_robot_overview.jpg
 ---
 
 ## Tools Used
-- **CFD Software:** STAR-CCM+
-- **Modeling/Prep:** Blender, SolidWorks, Fusion 360
-- **Experimental Setup:** Arduino Nano, Strain Gauges
-- **Fabrication:** Ultimaker S5 (ABS), HP MJF (PA12)
-- **Data Analysis:** MATLAB, Excel
-
+- **CAD / Mechanical Design:** SolidWorks, Onshape
+- **Fabrication:** Bambu Lab X1 Carbon, resin printing, heat sealing, laser-cut / hand-cut flexible films
+- **Materials:** Mylar PET films, TPU components, sandpaper jamming layers, flexible tubing
+- **Controls / Software:** ROS 2, Python, joystick-based actuation control
+- **Embedded / Hardware Integration:** Servo-actuated syringe pumps, pneumatic routing, external actuation architecture
+- **Data Analysis / Modeling:** MATLAB, quasi-static stiffness modeling, experimental load testing
 
 ## Project Goals
-- Understand the hydrodynamic impact of telemetry tags on sharks.
-- Use CFD and wind tunnel testing to estimate lift and drag forces.
-- Validate computational models using physical prototypes.
-- Provide a method for optimizing tag design.
+- Develop an underwater manipulator capable of safely grasping fragile objects.
+- Enable variable stiffness so the gripper can switch between compliant and load-bearing modes.
+- Use buoyancy modulation to reorient the end effector without relying on thrusters.
+- Expand access to confined and hard-to-reach spaces through a detachable end effector.
+- Validate the system through underwater manipulation demonstrations and stiffness experiments.
 
 ---
 
-## Methodology
+## Project Overview
 
-### Computational Fluid Dynamics (CFD)
-- 3D shark models obtained via photogrammetry.
-- Simulated in STAR-CCM+ with SST k-ω turbulence model.
-- Tested at 3 angles of attack: −12°, 0°, +12°.
-- Lift and drag coefficients computed and visualized.
+This project focused on designing a multifunctional underwater soft robotic manipulator for delicate interaction in marine environments. The system combines three core capabilities: a tendon-driven continuum arm for positioning, buoyancy-tunable pouches for smooth underwater orientation, and a stiffness-tunable soft gripper that can transition between gentle grasping and more stable load-bearing behavior. The end effector can also detach from the arm and operate independently, allowing manipulation in areas that are difficult to access with conventional arm-constrained systems. :contentReference[oaicite:2]{index=2}
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/GeneralMethodologyFlowchart.jpeg, /assets/images/profile-image/CFD_Mesh_Generation.jpg" 
-  height="200" 
-  caption="Left: General methodology flowchart combining CFD and wind tunnel validation. Right: CFD mesh of blacktip reef shark model." 
-%}
+Unlike traditional rigid underwater manipulators, this platform was designed around compliance, modularity, and mechanical adaptability. The goal was not just to build a novel prototype, but to create and experimentally validate a system architecture that could support future underwater inspection, environmental interaction, and object retrieval tasks in cluttered or fragile environments. :contentReference[oaicite:3]{index=3}
 
 ---
 
-### Wind Tunnel Testing
-- 3D-printed shark models (ABS and Nylon PA12).
-- Force balance system connected to Arduino.
-- Reynolds number matched CFD scenarios for validation.
-- Calibration and mounting setup shown below:
+## System Architecture
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Calibration_Method.jpg, /assets/images/profile-image/Aluminum_Sleeve.jpg" 
-  height="300" 
-  caption="Left: Calibration method using suspended weights. Right: Machined aluminum sleeve used for secure mounting in the wind tunnel." 
-%}
+### Continuum Arm
+The manipulator includes a tendon-driven soft continuum arm inspired by octopus locomotion and reach. The arm is composed of 36 segmented elements, allowing smooth bending and omnidirectional positioning while maintaining structural compliance. Tendons were routed through each segment, and the distal interface was designed to support both fixed and rotatable end-effector configurations. This subsystem served as the primary positioning mechanism for arm-attached operation. :contentReference[oaicite:4]{index=4}
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Hammerhead_in_Wind_Tunnel.jpg, /assets/images/profile-image/Blacktip_in_Wind_Tunnel.jpg" 
-  height="300" 
-  caption="Left: 3D printed hammerhead shark mounted in wind tunnel at 0° angle of attack. Right: 3D printed Blacktip Reef shark mounted similarly in wind tunnel." 
-%}
+### Buoyancy-Controlled Main Body
+The central body integrates multiple buoyancy-tunable pouches arranged symmetrically around a rigid core. By selectively inflating individual pouches, the system can generate controlled reorientation of the end effector with minimal hydrodynamic disturbance. This provided a low-energy alternative to thruster-based orientation control and enabled smooth underwater rotation of the manipulator in multiple directions. :contentReference[oaicite:5]{index=5}
+
+### Stiffness-Tunable End Effector
+The gripper was built around a pouch-driven soft bending actuator combined with a vacuum-activated layer-jamming mechanism. In its compliant state, the gripper conforms passively to object geometry for safer interaction. When vacuum is applied to the jamming layer, internal friction increases and the actuator becomes significantly stiffer, improving grasp stability during transport or under disturbance. The end effector also included propulsion flaps to help with retrieval in detached operation. :contentReference[oaicite:6]{index=6}
 
 ---
 
-## Results
+## Fabrication and Prototyping
 
-### Global Trends Across Species
+A major part of this project involved hands-on fabrication and iterative prototyping. The rigid structural components, including the arm segments and central body, were manufactured through 3D printing. Flexible buoyancy and bending pouches were fabricated from heat-sealed Mylar PET films, while the variable-stiffness layer used sandpaper-based laminar jamming sealed within a dedicated vacuum pouch. This combination of rigid and soft fabrication methods allowed rapid iteration while maintaining a compact and modular underwater design. :contentReference[oaicite:7]{index=7}
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Angle_of_Attack_vs_Drag_Coefficient.jpg, /assets/images/profile-image/Frontal_Area_vs_Drag_Coefficient.jpg" 
-  height="300" 
-  caption="Left: Drag coefficient vs angle of attack for each species. Right: Drag coefficient vs frontal area for each shark." 
-%}
-
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Reynolds_Number_vs_Drag_Coefficient.jpg" 
-  height="300" 
-  caption="Validation of wind tunnel accuracy with CFD comparison for a standard sphere at various Reynolds numbers." 
-%}
+The design process required balancing manufacturability, routing complexity, waterproofing, and mechanical performance. Pneumatic lines were distributed through the central hub to reduce clutter and avoid interference with grasped objects. The layered actuator architecture was designed so that bending and stiffening could be actuated independently, which made the system more modular and easier to test experimentally. :contentReference[oaicite:8]{index=8}
 
 ---
 
-### Shark-Specific Results
+## Controls and Coding
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Blacktip_Results.jpg, /assets/images/profile-image/Mako_Results.jpg" 
-  height="250" 
-  caption="Left: Results for Blacktip Reef Shark. Right: Results for Shortfin Mako Shark." 
-%}
+On the controls side, I developed the robotic actuation architecture needed to independently command bending, stiffness tuning, buoyancy modulation, and propulsion behaviors. The system used an external pneumatic actuation setup with servo-driven syringe mechanisms and flexible tubing to supply and regulate different channels. This work involved coordinating multiple subsystems rather than treating the robot as a single actuator. :contentReference[oaicite:9]{index=9}
 
-{% include image-gallery.html 
-  images="/assets/images/profile-image/Caribbean_Results.jpg, /assets/images/profile-image/Hammerhead_Results.jpg" 
-  height="250" 
-  caption="Left: Results for Caribbean Reef Shark. Right: Results for Great Hammerhead Shark." 
-%}
+I also worked on the software side of the platform, using ROS 2 and custom control logic to interface with the actuation system during experimental testing and demonstrations. This included subsystem-level command structure, manual control workflows, and integration between mechanical hardware and robotic software. From a job perspective, this project reflects full-stack prototype development: mechanical design, fabrication, hardware integration, and controls implementation within one robotic platform.
 
 ---
 
-## Digital Modeling
+## Modeling and Experimental Validation
 
-### Shark Species Modeled
-- Shortfin Mako
-- Caribbean Reef
-- Blacktip Reef
-- Great Hammerhead
+To quantify how stiffness tuning affected gripper behavior, I developed a quasi-static modeling framework for the end effector and performed load-based experiments to identify pressure-dependent bending stiffness. Midpoint loading experiments were used to isolate the jamming layer response, and the identified stiffness function was then used to predict deformation under both midpoint and distal loading cases. The results showed that increasing vacuum pressure increased effective stiffness and reduced deformation under load. :contentReference[oaicite:10]{index=10}
 
-Photogrammetric 3D models were sourced from **DigitalLife3D**, processed for STAR-CCM+ simulation and 3D printing.
-
-{% include image-gallery.html 
-  images="/assets/images/profile-image/nemesis_3d_model_mesh.jpg" 
-  height="300" 
-  caption="Example of a high-resolution photogrammetric shark mesh prepared for CFD and fabrication." 
-%}
+This modeling and validation effort was important because it moved the work beyond a proof-of-concept prototype. It established a measurable relationship between actuation input and mechanical response, and showed that the system’s stiffening behavior could be experimentally characterized and used for predictive analysis. :contentReference[oaicite:11]{index=11}
 
 ---
 
-## Key Findings
-- Lift coefficients ranged from **−0.02 to 0.37**.
-- Drag coefficients ranged from **0.14 to 0.21**.
-- CFD models matched wind tunnel results within **<10% error**.
-- Surface finish (ABS vs PA12) had **negligible impact**.
-- **Shortfin Mako** had the lowest drag; **Great Hammerhead** had higher lift due to cephalofoil geometry.
+## Demonstrations
+
+### Buoyancy-Driven Orientation
+Underwater demonstrations showed that the end effector could be reoriented through controlled actuation of buoyancy pouches, achieving smooth rotation without continuous thruster input. This highlighted the potential of buoyancy-based control for delicate underwater interaction tasks. :contentReference[oaicite:12]{index=12}
+
+### Arm-Attached Manipulation
+In arm-attached mode, the manipulator used the continuum arm for positioning while the end effector reoriented locally. This reduced the need for large arm motions and improved accessibility in cluttered environments. :contentReference[oaicite:13]{index=13}
+
+### Arm-Detached Manipulation
+One of the most distinctive features of the project was the detachable end effector. In detached mode, the end effector operated independently using buoyancy and propulsion, allowing it to access confined regions and perform deep grasping tasks that would be difficult for a conventional rigid arm. :contentReference[oaicite:14]{index=14}
+
+### Stiffness-Enhanced Grasping
+Grasping demonstrations compared compliant and stiffened modes during underwater manipulation. In the stiffened condition, the gripper better maintained object stability under motion and external disturbance, showing the practical value of tunable stiffness for underwater handling tasks. :contentReference[oaicite:15]{index=15}
+
+---
+
+## Key Outcomes
+- Designed and built a multi-unit underwater robotic manipulation platform combining continuum positioning, buoyancy control, and variable stiffness. :contentReference[oaicite:16]{index=16}
+- Developed a detachable end effector concept for manipulation in confined and hard-to-reach underwater spaces. :contentReference[oaicite:17]{index=17}
+- Demonstrated stiffness change of more than 2× through layer-jamming activation. :contentReference[oaicite:18]{index=18}
+- Achieved buoyancy-driven reorientation up to approximately ±180°. :contentReference[oaicite:19]{index=19}
+- Built and experimentally validated a pressure-dependent stiffness model for the gripper actuator. :contentReference[oaicite:20]{index=20}
+- Integrated mechanical design, soft actuator fabrication, experimental testing, and robotic controls into one working prototype.
 
 ---
 
 ## Reflection
 
-This project brought together mechanical design, marine biology, and computational physics to solve a real conservation-driven engineering challenge. It provided hands-on experience with CAD modeling, CFD validation, and experimental methods. I'm proud to have contributed to a methodology that may support future biologging innovations.
+This project represents the kind of engineering work I enjoy most: taking an idea from concept to hardware, solving fabrication and integration problems along the way, and validating the final system experimentally. It required me to work across CAD, soft actuator fabrication, underwater prototyping, mechanical modeling, and robotic control development. More than anything, it reflects my interest in underwater robotic systems that are not only functional, but thoughtfully designed for real interaction in difficult environments.
 
 ---
 
 ## Improvements and Future Work
-- Attach tag models to shark geometries and run new simulations.
-- Incorporate dynamic (unsteady) flow modeling to capture fin/body flexion.
-- Apply transition models (e.g., Gamma-Re-Theta) to improve turbulence resolution.
-- Explore riblet surfaces or coatings inspired by shark skin to reduce drag on tags.
+- Integrate onboard sensing for closed-loop pose and grasp control.
+- Replace bulky offboard actuation hardware with more compact deployable systems.
+- Improve autonomy for detached end-effector navigation and retrieval.
+- Expand testing into open-water or field-relevant underwater environments.
+- Incorporate perception and tactile sensing for more robust object interaction. :contentReference[oaicite:21]{index=21}
